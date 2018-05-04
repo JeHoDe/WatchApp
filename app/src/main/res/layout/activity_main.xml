@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:fitsSystemWindows="true"
+    tools:context="com.triton.jh.watchapp.MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/page_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:gravity="bottom|center_horizontal"
+        android:layout_height="40pt">
+        <ImageView
+            android:id="@+id/no_gps"
+            android:layout_height="12pt"
+            android:layout_width="12pt"
+            android:visibility="gone"
+            android:background="@drawable/ic_gps_off_24dp"/>
+        <ImageView
+            android:id="@+id/pause"
+            android:layout_height="12pt"
+            android:layout_width="12pt"
+            android:visibility="gone"
+            android:background="@drawable/ic_pause_24dp"/>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/slider_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40pt"
+        android:layout_below="@+id/page_container"
+        android:gravity="top|center_horizontal"
+        android:orientation="horizontal"
+        app:layout_anchor="@+id/page_container"
+        app:layout_anchorGravity="bottom|center">
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

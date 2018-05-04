@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
+        <item>@font/alegreya_sc</item>
+        <item>@font/benchnine_bold</item>
+        <item>@font/syncopate</item>
+        <item>@font/ubuntu_light</item>
+        <item>@font/yantramanav</item>
+        <item>@font/yantramanav_medium</item>
+    </array>
+</resources>

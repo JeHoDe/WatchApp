@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/setting_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:fitsSystemWindows="true"
+    tools:context="com.triton.jh.watchapp.SettingActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/setting_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/setting_slider_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40pt"
+        android:layout_below="@+id/setting_container"
+        android:gravity="top|center_horizontal"
+        android:orientation="horizontal"
+        app:layout_anchor="@+id/setting_container"
+        app:layout_anchorGravity="bottom|center">
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
